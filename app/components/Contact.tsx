@@ -137,7 +137,7 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_next" value="https://yourwebsite.com/#contact" />
+                <input type="hidden" name="_next" value="https://portfolio-khaki-seven-athnfy7asx.vercel.app/" />
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
