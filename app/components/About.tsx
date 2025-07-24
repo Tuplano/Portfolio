@@ -39,7 +39,7 @@ export default function About() {
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              I’ve worked with technologies like Next.js, Spring Boot, MongoDB,
+              I’ve worked with technologies like Next.js, ASP.NET, MongoDB,
               and Tailwind CSS, and I enjoy turning ideas into working solutions
               through real-world projects. Whether I’m designing user flows,
               optimizing performance, or connecting databases, I approach each
