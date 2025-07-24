@@ -38,9 +38,9 @@ export default function Hero() {
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Hi, I'm{" "}
-<span className="bg-gradient-to-r from-lime-400 to-emerald-400 bg-clip-text text-transparent">
-  Kevin Tuplano
-</span>
+            <span className="bg-gradient-to-r from-lime-400 to-emerald-400 bg-clip-text text-transparent">
+              Kevin Tuplano
+            </span>
           </h1>
           <div className="text-2xl md:text-3xl text-gray-300 mb-8 h-12 flex items-center justify-center">
             <span className="border-r-2 border-purple-400 pr-2 animate-pulse">
@@ -51,10 +51,9 @@ export default function Hero() {
         </div>
 
         <p className="text-xl text-gray-100 mb-12 leading-relaxed max-w-2xl mx-auto">
-          I’m a developer who enjoys building clean, functional, and
-          user-friendly web experiences. Whether it’s crafting responsive
-          interfaces or working behind the scenes on logic and data, I’m all
-          about creating solutions that actually work — and look good doing it.
+          I build web experiences that are clean, responsive, and actually
+          useful. I’m into both the front-end design details and the back-end
+          logic — basically, I like making things work and look good doing it.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -64,7 +63,7 @@ export default function Hero() {
                 .getElementById("projects")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-className="bg-gradient-to-r from-emerald-600 to-lime-500 text-white px-8 py-4 rounded-full font-semibold hover:from-emerald-700 hover:to-lime-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-emerald-500/25"
+            className="bg-gradient-to-r from-emerald-600 to-lime-500 text-white px-8 py-4 rounded-full font-semibold hover:from-emerald-700 hover:to-lime-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-emerald-500/25"
           >
             View My Work
           </button>
@@ -74,7 +73,7 @@ className="bg-gradient-to-r from-emerald-600 to-lime-500 text-white px-8 py-4 ro
                 .getElementById("contact")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-className="border-2 border-emerald-400 text-emerald-400 px-8 py-4 rounded-full font-semibold hover:bg-emerald-400 hover:text-white transform hover:scale-105 transition-all duration-200"
+            className="border-2 border-emerald-400 text-emerald-400 px-8 py-4 rounded-full font-semibold hover:bg-emerald-400 hover:text-white transform hover:scale-105 transition-all duration-200"
           >
             Let's Talk
           </button>

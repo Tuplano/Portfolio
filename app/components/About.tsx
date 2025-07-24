@@ -30,19 +30,21 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-gray-300 text-lg leading-relaxed">
-              I’m an aspiring full-stack developer with around a year of
-              experience building web applications that are both functional and
-              user-focused. My journey started with a simple curiosity about how
-              websites work — now, it’s a growing passion for creating seamless
-              and intuitive digital experiences.
+              I'm an aspiring full-stack developer with hands-on experience
+              building web applications that are functional, user-focused, and
+              responsive. My journey began with a curiosity about how websites
+              work, which quickly turned into a passion for creating clean,
+              intuitive digital experiences — from front-end interfaces to
+              back-end logic and APIs.
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              I work with modern web technologies and enjoy learning through
-              hands-on projects that push me to grow. From building responsive
-              front-ends to developing and connecting APIs, I approach each
-              challenge with curiosity, attention to detail, and a drive to
-              improve.
+              I’ve worked with technologies like Next.js, Spring Boot, MongoDB,
+              and Tailwind CSS, and I enjoy turning ideas into working solutions
+              through real-world projects. Whether I’m designing user flows,
+              optimizing performance, or connecting databases, I approach each
+              task with curiosity, consistency, and a desire to keep learning
+              and improving.
             </p>
 
             <div className="flex flex-wrap gap-6 pt-6 text-white text-4xl">
