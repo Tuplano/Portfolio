@@ -74,10 +74,7 @@ export default function About() {
                 className="hover:text-purple-300 transition"
               />
               <SiPhp title="PHP" className="hover:text-indigo-400 transition" />
-              <SiSpringboot
-                title="Spring Boot"
-                className="hover:text-green-500 transition"
-              />
+  
               <SiNodedotjs
                 title="Node.js"
                 className="hover:text-green-400 transition"
