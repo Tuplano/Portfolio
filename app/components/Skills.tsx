@@ -99,12 +99,12 @@ export default function Skills() {
               "Next.js",
               "Tailwind CSS",
               "PHP",
-              "Spring Boot",
               "Node.js",
               "MongoDB",
               "MySQL",
               "Git",
-              ".NET",
+              "ASP.NET",
+              "VB.NET",
             ].map((tech) => (
               <div
                 key={tech}
