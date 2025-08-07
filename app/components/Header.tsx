@@ -38,7 +38,7 @@ export default function Header() {
   const scrollToSection = (href: string) => {
     const element = document.getElementById(href.replace('#', ''))
     element?.scrollIntoView({ behavior: 'smooth' })
-    setIsMobileMenuOpen(false) // close menu on click
+    setIsMobileMenuOpen(false) 
   }
 
   return (
@@ -55,7 +55,7 @@ export default function Header() {
             <span className="text-lime-400">{'/>'}</span>
           </div>
 
-          {/* Desktop Nav */}
+
           <ul className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <li key={item.label}>
@@ -76,7 +76,6 @@ export default function Header() {
             ))}
           </ul>
 
-          {/* Mobile Menu Button */}
           <button 
             className="md:hidden text-white" 
             onClick={() => setIsMobileMenuOpen(prev => !prev)}

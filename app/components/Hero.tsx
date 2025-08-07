@@ -51,9 +51,9 @@ export default function Hero() {
         </div>
 
         <p className="text-xl text-gray-100 mb-12 leading-relaxed max-w-2xl mx-auto">
-          I build web experiences that are clean, responsive, and actually
-          useful. I’m into both the front-end design details and the back-end
-          logic — basically, I like making things work and look good doing it.
+I make websites that are simple, responsive, and easy to use. I enjoy working on both the look and the logic — making sure things not only work well but feel right to use.
+
+
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
