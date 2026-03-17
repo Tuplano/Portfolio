@@ -1,100 +1,71 @@
-import Image from "next/image";
-import profilePic from "@/app/assets/profile/profile.png";
-
+import Image from 'next/image'
+import profilePic from '@/app/assets/profile/profile.png'
+import { Separator } from '@/components/ui/separator'
 import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiReact,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiPhp,
-  SiSpringboot,
-  SiNodedotjs,
-  SiMongodb,
-  SiMysql,
-  SiGit,
-  SiDotnet,
-} from "react-icons/si";
+  SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs,
+  SiTailwindcss, SiPhp, SiNodedotjs, SiMongodb, SiMysql, SiGit, SiDotnet,
+} from 'react-icons/si'
+
+const techStack = [
+  { icon: SiHtml5, label: 'HTML5', color: 'hover:text-orange-500' },
+  { icon: SiCss3, label: 'CSS3', color: 'hover:text-blue-400' },
+  { icon: SiJavascript, label: 'JavaScript', color: 'hover:text-yellow-300' },
+  { icon: SiReact, label: 'React', color: 'hover:text-cyan-400' },
+  { icon: SiNextdotjs, label: 'Next.js', color: 'hover:text-zinc-100' },
+  { icon: SiTailwindcss, label: 'Tailwind', color: 'hover:text-teal-300' },
+  { icon: SiDotnet, label: 'ASP.NET', color: 'hover:text-purple-300' },
+  { icon: SiPhp, label: 'PHP', color: 'hover:text-indigo-400' },
+  { icon: SiNodedotjs, label: 'Node.js', color: 'hover:text-green-400' },
+  { icon: SiMongodb, label: 'MongoDB', color: 'hover:text-green-500' },
+  { icon: SiMysql, label: 'MySQL', color: 'hover:text-blue-300' },
+  { icon: SiGit, label: 'Git', color: 'hover:text-orange-400' },
+]
+
 export default function About() {
   return (
-    <section id="about" className="py-20 px-6">
+    <section id="about" className="py-24 px-6 border-t border-zinc-800">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About <span className="text-lime-400">Me</span>
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-lime-500 to-emerald-400 mx-auto rounded-full"></div>
-        </div>
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <p className="text-lime-400 font-mono text-sm mb-3">about me</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-100 mb-6">
+              A developer based in Cavite, PH.
+            </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <p className="text-gray-300 text-lg leading-relaxed">
-I’m a full-stack developer in the making, with a focus on building practical and user-friendly web applications. I started out just curious about how websites worked, and over time that curiosity grew into a genuine interest in creating smooth, functional website.
-            </p>
+            <div className="space-y-4 text-zinc-400 text-base leading-relaxed">
+              <p>
+                I&apos;m a full-stack developer in the making, with a focus on building practical and user-friendly web applications. I started out just curious about how websites worked, and over time that curiosity grew into a genuine interest in creating smooth, functional sites.
+              </p>
+              <p>
+                I&apos;ve worked with tools like Next.js, ASP.NET, MongoDB, and Tailwind CSS, and I like figuring out how to turn ideas into working projects.
+              </p>
+            </div>
 
-            <p className="text-gray-300 text-lg leading-relaxed">
-I’ve worked with tools like Next.js, ASP.NET, MongoDB, and Tailwind CSS, and I like figuring out how to turn ideas into working projects. 
-            </p>
+            <Separator className="my-8 bg-zinc-800" />
 
-            <div className="flex flex-wrap gap-6 pt-6 text-white text-4xl">
-              <SiHtml5
-                title="HTML5"
-                className="hover:text-orange-500 transition"
-              />
-              <SiCss3 title="CSS3" className="hover:text-blue-400 transition" />
-              <SiJavascript
-                title="JavaScript"
-                className="hover:text-yellow-300 transition"
-              />
-              <SiReact
-                title="React"
-                className="hover:text-cyan-400 transition"
-              />
-              <SiNextdotjs
-                title="Next.js"
-                className="hover:text-black transition"
-              />
-              <SiTailwindcss
-                title="Tailwind CSS"
-                className="hover:text-teal-300 transition"
-              />
-              <SiDotnet
-                title="ASP.NET / VB.NET"
-                className="hover:text-purple-300 transition"
-              />
-              <SiPhp title="PHP" className="hover:text-indigo-400 transition" />
-  
-              <SiNodedotjs
-                title="Node.js"
-                className="hover:text-green-400 transition"
-              />
-              <SiMongodb
-                title="MongoDB"
-                className="hover:text-green-600 transition"
-              />
-              <SiMysql
-                title="MySQL"
-                className="hover:text-blue-300 transition"
-              />
-              <SiGit title="Git" className="hover:text-orange-400 transition" />
+            <p className="text-zinc-500 text-sm font-mono mb-4">technologies I work with</p>
+            <div className="flex flex-wrap gap-5 text-3xl text-zinc-500">
+              {techStack.map(({ icon: Icon, label, color }) => (
+                <Icon key={label} title={label} className={`transition-colors duration-200 ${color}`} />
+              ))}
             </div>
           </div>
 
-          <div className="relative">
-            <div className="bg-gradient-to-br from-lime-500/20 to-green-500/20 rounded-2xl p-8 border border-slate-700 backdrop-blur-sm shadow-xl">
-              <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-lime-400 shadow-lg">
+          <div className="flex justify-center md:justify-end">
+            <div className="relative">
+              <div className="w-64 h-64 md:w-72 md:h-72 rounded-2xl overflow-hidden border border-zinc-800">
                 <Image
                   src={profilePic}
-                  alt="Profile Picture"
+                  alt="Kevin Tuplano"
                   fill
                   className="object-cover"
                 />
               </div>
+              <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border border-lime-400/30 -z-10" />
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }

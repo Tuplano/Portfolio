@@ -5,9 +5,10 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+
 export default function Home() {
   return (
-<main className="min-h-screen bg-gradient-to-br from-lime-900 via-emerald-800 to-green-600">
+    <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <Header />
       <Hero />
       <About />
@@ -17,5 +18,4 @@ export default function Home() {
       <Footer />
     </main>
   )
-
 }
